@@ -1,53 +1,35 @@
 {
   "name": "spotify-player",
   "version": "1.0.0",
-  "description": "Spotify Player",
-  "main": "src/main.js",
-  "scripts": {
-    "clear": "rimraf lib",
-    "build": "npm run clear && ./node_modules/.bin/babel --out-dir lib src",
-    "build:watch": "npm run build -- --watch",
-    "lint": "./node_modules/.bin/eslint src/*.js",
-    "prepush": "npm run lint",
-    "test": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register",
-    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --require babel-register --watch",
-    "test:coverage": "nyc npm test"
+  "description": "One Paragraph of project description goes here",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
   },
-  "nyc": {
-    "reporter": [
-      "text",
-      "html"
-    ],
-    "exclude": [
-      "tests/**"
-    ]
+  "scripts": {
+    "build": "node_modules/.bin/webpack --config webpack.config.js",
+    "watch": "npm run build -- --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/willianjusten/js-tdd-course.git"
+    "url": "git+https://github.com/jeffersonRibeiro/spotify-player.git"
   },
-  "keywords": [
-    "js",
-    "tdd",
-    "library"
-  ],
-  "author": "Willian Justen <willianjustenqui@gmail.com> (https://willianjusten.com.br/)",
-  "license": "MIT",
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/willianjusten/js-tdd-course/issues"
+    "url": "https://github.com/jeffersonRibeiro/spotify-player/issues"
   },
-  "homepage": "https://github.com/willianjusten/js-tdd-course#readme",
+  "homepage": "https://github.com/jeffersonRibeiro/spotify-player#readme",
   "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-preset-env": "^1.3.2",
-    "babel-register": "^6.24.0",
-    "chai": "^3.5.0",
-    "eslint": "^4.0.0",
-    "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.6.1",
-    "husky": "^0.11.9",
-    "mocha": "^3.2.0",
-    "nyc": "^10.2.0",
-    "rimraf": "^2.6.1"
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.0",
+    "babel-preset-env": "^1.7.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0"
   }
 }
