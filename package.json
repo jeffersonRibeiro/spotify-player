@@ -4,6 +4,7 @@
   "description": "Nossa biblioteca do curso de JS com TDD na prática.",
   "main": "index.js",
   "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server",
     "build": "node_modules/.bin/webpack",
     "build:watch": "npm run build -- --watch",
     "lint": "./node_modules/.bin/eslint src/*.js",
@@ -46,7 +47,8 @@
     "nyc": "^10.2.0",
     "rimraf": "^2.6.1",
     "webpack": "^4.17.1",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7"
   },
   "dependencies": {
     "@babel/core": "^7.0.0",

@@ -1,10 +1,18 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
-  entry: path.resolve(__dirname, './src/main.js'),
+  mode: 'development',
+  context: path.resolve(__dirname, './src'),
+  entry: {
+    app: './main.js',
+  },
   output: {
-    path: path.resolve(__dirname, './example/js'),
     filename: 'bundle.js',
+    path: path.resolve(__dirname, './example'),
+  },
+  devServer: {
+    contentBase: path.resolve(__dirname, './example'),
   },
   module: {
     rules: [
