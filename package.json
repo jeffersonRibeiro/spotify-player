@@ -22,14 +22,7 @@
   },
   "homepage": "https://github.com/jeffersonRibeiro/spotify-player#readme",
   "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.0",
-    "babel-preset-env": "^1.7.0",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0"
-  },
-  "dependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/preset-env": "^7.0.0"
   }
 }
