@@ -1,7 +1,5 @@
 const path = require('path');
 
-console.log('__dirname', __dirname);
-
 module.exports = {
   entry: path.resolve(__dirname, './src/main.js'),
   output: {
@@ -15,8 +13,8 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-        }
-      }
-    ]
-  }
+        },
+      },
+    ],
+  },
 };
