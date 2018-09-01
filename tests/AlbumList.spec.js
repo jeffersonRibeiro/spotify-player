@@ -1,4 +1,5 @@
 /* eslint-disable */
+import 'jsdom-global/register';
 import { expect } from 'chai';
 import renderAlbums from '../src/AlbumList';
 
