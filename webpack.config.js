@@ -8,8 +8,8 @@ module.exports = {
     app: './main.js',
   },
   output: {
-    filename: 'bundle.js',
     path: path.resolve(__dirname, './example'),
+    filename: 'bundle.js',
   },
   devServer: {
     contentBase: path.resolve(__dirname, './example'),
