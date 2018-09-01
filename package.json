@@ -38,6 +38,8 @@
   },
   "homepage": "https://github.com/willianjusten/js-tdd-course#readme",
   "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
     "chai": "^3.5.0",
     "eslint": "^4.0.0",
     "eslint-config-airbnb-base": "^11.2.0",
